@@ -1,0 +1,28 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "ChatR";
+}
+
+<img style="float:right" class="d-lg-block d-none" src="AzureLinkQrCode.png" />
+
+<div class="row">
+    <div class="form-group col-sm-6">
+        <h2>I think SignalR is <strong>good</strong> for:</h2>
+        <input type="text" class="form-control" id="messageGood" placeholder="your message..." name="message">
+        <button type="button" id="sendGoodButton" (click)="sendGood()">Send</button>
+        <ul id="listGood">
+        </ul>
+
+
+    </div>
+    <div class="form-group col-sm-6">
+        <h2>I think SignalR is <strong>not good</strong> for:</h2>
+        <input type="text" class="form-control" id="messageBad" placeholder="your message..." name="message">
+        <button type="button" id="sendBadButton" (click)="sendBad()">Send</button>
+        <ul id="listBad">
+        </ul>
+    </div>
+</div>
+<script src="~/lib/signalr/dist/browser/signalr.js"></script>
+<script src="~/js/chat.js"></script>
