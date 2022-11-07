@@ -6,6 +6,10 @@
       "provider": "unpkg",
       "library": "@microsoft/signalr@6.0.10",
       "destination": "wwwroot/lib/signalr/"
+    },
+    {
+      "library": "bootstrap@5.2.2",
+      "destination": "wwwroot/lib/bootstrap/"
     }
   ]
 }
