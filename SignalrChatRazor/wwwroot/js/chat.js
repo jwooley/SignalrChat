@@ -35,14 +35,4 @@ function setup(type) {
         });
         event.preventDefault();
     });
-
 }
-
-//document.getElementById("sendBadButton").addEventListener("click", function (event) {
-//    //var user = document.getElementById("userInput").value;
-//    var message = document.getElementById("messageBad").value;
-//    connection.invoke("SendBad", message).catch(function (err) {
-//        return console.error(err.toString());
-//    });
-//    event.preventDefault();
-//});
